@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function check() {
+			x = document.getElementById('name').value;
+			if(x.length == 0) {
+				alert("Error");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="return check()">
+		<input type="text" name="name" id="name">
+		<input type="submit" name="submit">
+	</form>
+	
+
+</body>
+</html>
